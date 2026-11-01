@@ -1,0 +1,31 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-25T01:03:37.607707",
+  "condition": "bc6.0_k6",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 6,
+  "num_rounds": 15,
+  "bc_ratio": 6.0,
+  "replications": 5,
+  "completed_replications": 5,
+  "failed_replications": 0,
+  "failed_replication_indices": [],
+  "model": "gemini-3-flash-preview",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "theory_prediction": "boundary",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)"
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the dissertation below."
+title: "llm-network-reciprocity: code and data for the dissertation on network reciprocity and LLM agents"
+type: software
+authors:
+  - family-names: "Lojudice Sobrinho"
+    given-names: "David"
+    orcid: "https://orcid.org/0009-0009-2634-6687"
+license: MIT
+repository-code: "https://github.com/dalssoft/llm-network-reciprocity"
+preferred-citation:
+  type: thesis
+  thesis-type: "Master's dissertation"
+  title: "Reciprocidade em rede e agentes LLM: dinâmica de cooperação no dilema do prisioneiro iterado"
+  authors:
+    - family-names: "Lojudice Sobrinho"
+      given-names: "David"
+      orcid: "https://orcid.org/0009-0009-2634-6687"
+  institution:
+    name: "Escola de Artes, Ciências e Humanidades, Universidade de São Paulo"
+    city: "São Paulo"
+    country: "BR"
+  year: 2026
+  languages:
+    - pt

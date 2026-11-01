@@ -1,0 +1,40 @@
+{
+  "spec": {
+    "base": [
+      "own_coop_prev",
+      "frac_nb_coop_prev"
+    ],
+    "slices": {
+      "EXP-A": {
+        "time": [
+          "round_frac",
+          "is_last"
+        ],
+        "structure": [
+          "static_network"
+        ]
+      },
+      "EXP-B": {
+        "time": [
+          "round_frac",
+          "is_last"
+        ],
+        "structure": [
+          "k",
+          "bc_ratio",
+          "above_threshold"
+        ]
+      },
+      "HORIZON": {
+        "time": [
+          "round"
+        ],
+        "structure": []
+      }
+    },
+    "min_events": 30,
+    "estimator": "statsmodels Logit, cluster-robust SE by rep_key"
+  },
+  "n_cells": 18,
+  "n_fitted": 7
+}

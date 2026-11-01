@@ -1,0 +1,132 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-23T17:56:09.307745",
+  "condition": "bc6.0_k6",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 6,
+  "num_rounds": 15,
+  "bc_ratio": 6.0,
+  "replications": 15,
+  "completed_replications": 1,
+  "failed_replications": 14,
+  "failed_replication_indices": [
+    4,
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    0,
+    5,
+    12,
+    1,
+    11,
+    13,
+    14
+  ],
+  "model": "gemini-2.5-flash-lite",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "theory_prediction": "boundary",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)",
+  "errors": [
+    {
+      "replication": 4,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:52:05.841319"
+    },
+    {
+      "replication": 3,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:52:11.212255"
+    },
+    {
+      "replication": 6,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:52:35.696237"
+    },
+    {
+      "replication": 7,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C\\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:52:44.376057"
+    },
+    {
+      "replication": 8,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:52:45.560402"
+    },
+    {
+      "replication": 9,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: trailing characters at line 2 column 9 [type=json_invalid, input_value='\\n\"action\": \"C\"\\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:52:49.780687"
+    },
+    {
+      "replication": 10,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C\\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:53:03.809286"
+    },
+    {
+      "replication": 0,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:53:37.139406"
+    },
+    {
+      "replication": 5,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:53:46.253855"
+    },
+    {
+      "replication": 12,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:53:48.782711"
+    },
+    {
+      "replication": 1,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:54:17.638468"
+    },
+    {
+      "replication": 11,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:54:54.735928"
+    },
+    {
+      "replication": 13,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:55:50.855505"
+    },
+    {
+      "replication": 14,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:55:58.417629"
+    }
+  ]
+}

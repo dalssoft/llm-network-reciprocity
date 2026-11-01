@@ -1,0 +1,97 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-23T16:54:07.015275",
+  "condition": "bc6.0_k2",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 2,
+  "num_rounds": 15,
+  "bc_ratio": 6.0,
+  "replications": 15,
+  "completed_replications": 6,
+  "failed_replications": 9,
+  "failed_replication_indices": [
+    3,
+    0,
+    2,
+    7,
+    5,
+    10,
+    11,
+    12,
+    13
+  ],
+  "model": "gemini-2.5-flash-lite",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "theory_prediction": "cooperation favored",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)",
+  "errors": [
+    {
+      "replication": 3,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T16:44:59.525209"
+    },
+    {
+      "replication": 0,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: trailing characters at line 2 column 9 [type=json_invalid, input_value='\\n\"action\": \"C\"\\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T16:45:08.422992"
+    },
+    {
+      "replication": 2,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T16:45:08.486269"
+    },
+    {
+      "replication": 7,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T16:45:14.711189"
+    },
+    {
+      "replication": 5,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T16:47:42.470120"
+    },
+    {
+      "replication": 10,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T16:49:23.890515"
+    },
+    {
+      "replication": 11,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T16:49:29.816568"
+    },
+    {
+      "replication": 12,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T16:49:33.060287"
+    },
+    {
+      "replication": 13,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T16:49:35.469103"
+    }
+  ]
+}

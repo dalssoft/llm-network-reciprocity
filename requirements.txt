@@ -1,0 +1,16 @@
+# Analysis (enough to rebuild the tables and figures from the saved data)
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+statsmodels==0.14.6
+matplotlib==3.10.8
+seaborn==0.13.2
+networkx==3.6.1
+tqdm==4.67.1
+
+# Running new simulations (calls LLMs through an OpenAI-compatible proxy;
+# the proxy itself runs in Docker, see the README)
+openai==1.65.3
+pydantic==2.12.0
+LLMEasyTools==0.25
+python-dotenv==1.2.1

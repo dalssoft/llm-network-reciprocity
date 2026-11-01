@@ -1,0 +1,27 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2025-12-21T18:37:25.392576",
+  "condition": "bc6.0_k2",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 2,
+  "num_rounds": 15,
+  "bc_ratio": 6.0,
+  "replications": 5,
+  "model": "gpt-3.5-turbo",
+  "model_provider": "openai",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "theory_prediction": "cooperation favored",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)"
+}

@@ -1,0 +1,48 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-23T18:35:03.212701",
+  "condition": "bc4.0_k2",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 2,
+  "num_rounds": 15,
+  "bc_ratio": 4.0,
+  "replications": 5,
+  "completed_replications": 3,
+  "failed_replications": 2,
+  "failed_replication_indices": [
+    0,
+    1
+  ],
+  "model": "gemini-3-flash-preview",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 40,
+    "R": 30,
+    "P": 0,
+    "S": -10,
+    "b": 40,
+    "c": 10
+  },
+  "theory_prediction": "cooperation favored",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)",
+  "errors": [
+    {
+      "replication": 0,
+      "error_type": "APIConnectionError",
+      "error_message": "Connection error.",
+      "timestamp": "2026-01-23T18:19:26.594837"
+    },
+    {
+      "replication": 1,
+      "error_type": "APIConnectionError",
+      "error_message": "Connection error.",
+      "timestamp": "2026-01-23T18:19:26.699126"
+    }
+  ]
+}

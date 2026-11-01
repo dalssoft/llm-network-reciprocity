@@ -1,0 +1,42 @@
+# LiteLLM proxy config with the seven models used in the dissertation.
+# Start with:  litellm --config litellm_config.yaml --port 4000
+# The provider keys are read from the environment (see .env.example).
+model_list:
+  # Stage 1: reproduction of Han et al.
+  - model_name: gpt-3.5-turbo
+    litellm_params:
+      model: openai/gpt-3.5-turbo-0125
+      api_key: os.environ/OPENAI_PROVIDER_API_KEY
+  - model_name: gpt-4-0613
+    litellm_params:
+      model: openai/gpt-4-0613
+      api_key: os.environ/OPENAI_PROVIDER_API_KEY
+
+  # Stages 2 and 3: recent models
+  - model_name: gemini-3-flash-preview
+    litellm_params:
+      model: gemini/gemini-3-flash-preview
+      api_key: os.environ/GOOGLE_LLM_API_KEY
+  - model_name: gemini-2.5-flash-lite
+    litellm_params:
+      model: gemini/gemini-2.5-flash-lite
+      api_key: os.environ/GOOGLE_LLM_API_KEY
+  - model_name: gpt-5-mini
+    litellm_params:
+      model: openai/gpt-5-mini-2025-08-07
+      api_key: os.environ/OPENAI_PROVIDER_API_KEY
+  - model_name: DeepSeek-V3.2
+    litellm_params:
+      model: deepseek/deepseek-chat
+      api_key: os.environ/DEEPSEEK_API_KEY
+      api_base: os.environ/DEEPSEEK_API_BASE
+  - model_name: gpt-oss-120b
+    litellm_params:
+      model: cerebras/gpt-oss-120b
+      api_key: os.environ/CEREBRAS_API_KEY
+
+litellm_settings:
+  drop_params: true
+
+router_settings:
+  num_retries: 2

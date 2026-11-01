@@ -1,0 +1,62 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-23T17:07:06.342695",
+  "condition": "bc2.0_k4",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 4,
+  "num_rounds": 15,
+  "bc_ratio": 2.0,
+  "replications": 15,
+  "completed_replications": 11,
+  "failed_replications": 4,
+  "failed_replication_indices": [
+    9,
+    6,
+    13,
+    14
+  ],
+  "model": "gemini-2.5-flash-lite",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 20,
+    "R": 10,
+    "P": 0,
+    "S": -10,
+    "b": 20,
+    "c": 10
+  },
+  "theory_prediction": "defection favored",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)",
+  "errors": [
+    {
+      "replication": 9,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:01:35.902133"
+    },
+    {
+      "replication": 6,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: expected value at line 1 column 1 [type=json_invalid, input_value='C', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:02:47.062248"
+    },
+    {
+      "replication": 13,
+      "error_type": "ValidationError",
+      "error_message": "1 validation error for Decision\n  Invalid JSON: trailing characters at line 2 column 9 [type=json_invalid, input_value='\\n\"action\": \"C\"\\n', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/json_invalid",
+      "timestamp": "2026-01-23T17:03:03.075329"
+    },
+    {
+      "replication": 14,
+      "error_type": "AttributeError",
+      "error_message": "'NoneType' object has no attribute 'action'",
+      "timestamp": "2026-01-23T17:05:34.164594"
+    }
+  ]
+}

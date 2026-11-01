@@ -1,0 +1,76 @@
+{
+  "built_at": "2026-11-01T18:16:18+00:00",
+  "experiments_root": "theses/experiments",
+  "n_run_dirs": 97,
+  "n_replications": 536,
+  "n_decisions": 171050,
+  "per_family": {
+    "han_reproduction/A": {
+      "runs": 4,
+      "reps": 20,
+      "decisions": 4000
+    },
+    "han_reproduction/B": {
+      "runs": 9,
+      "reps": 45,
+      "decisions": 16875
+    },
+    "modern_models/A": {
+      "runs": 16,
+      "reps": 80,
+      "decisions": 16000
+    },
+    "modern_models/B": {
+      "runs": 62,
+      "reps": 331,
+      "decisions": 124125
+    },
+    "probabilistic_horizon/horizon": {
+      "runs": 6,
+      "reps": 60,
+      "decisions": 10050
+    }
+  },
+  "validation": {
+    "hard_problems": [],
+    "warnings": [],
+    "rate_tolerance": 1e-06
+  },
+  "columns": [
+    "family",
+    "results_version",
+    "experiment",
+    "run_path",
+    "run_ts",
+    "condition",
+    "model",
+    "model_provider",
+    "with_reasoning",
+    "model_variant",
+    "network_type",
+    "static_network",
+    "num_agents",
+    "k",
+    "bc_ratio",
+    "num_rounds_planned",
+    "continuation_delta",
+    "horizon_info",
+    "replication",
+    "rep_key",
+    "round",
+    "agent_id",
+    "action",
+    "coop",
+    "payoff",
+    "n_neighbors",
+    "neighbor_ids",
+    "n_rounds_rep",
+    "rounds_remaining",
+    "is_last_round",
+    "own_coop_prev",
+    "own_payoff_prev",
+    "n_nb_prev",
+    "n_nb_coop_prev",
+    "frac_nb_coop_prev"
+  ]
+}

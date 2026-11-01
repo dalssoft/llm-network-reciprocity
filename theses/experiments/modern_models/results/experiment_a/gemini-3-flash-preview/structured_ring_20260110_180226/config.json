@@ -1,0 +1,30 @@
+{
+  "experiment": "Experiment A: Well-Mixed vs Structured (Setting 1)",
+  "paper_reference": "Han et al. (2024), Figure 3",
+  "timestamp": "2026-01-10T18:02:26.455049",
+  "condition": "structured_ring",
+  "network_type": "lattice",
+  "num_agents": 8,
+  "k": 2,
+  "num_rounds": 25,
+  "bc_ratio": 6.0,
+  "replications": 5,
+  "completed_replications": 5,
+  "failed_replications": 0,
+  "failed_replication_indices": [],
+  "model": "gemini-3-flash-preview",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)"
+}

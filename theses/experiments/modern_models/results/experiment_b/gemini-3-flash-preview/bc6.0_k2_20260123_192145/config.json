@@ -1,0 +1,55 @@
+{
+  "experiment": "Experiment B: Parameter Sweep (Setting 2)",
+  "paper_reference": "Han et al. (2024), Figures 4 & 5",
+  "timestamp": "2026-01-23T19:21:45.971175",
+  "condition": "bc6.0_k2",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 2,
+  "num_rounds": 15,
+  "bc_ratio": 6.0,
+  "replications": 15,
+  "completed_replications": 12,
+  "failed_replications": 3,
+  "failed_replication_indices": [
+    13,
+    12,
+    14
+  ],
+  "model": "gemini-3-flash-preview",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": false,
+  "payoff_matrix": {
+    "T": 60,
+    "R": 50,
+    "P": 0,
+    "S": -10,
+    "b": 60,
+    "c": 10
+  },
+  "theory_prediction": "cooperation favored",
+  "tutorial_enabled": true,
+  "feedback_format": "Han et al. (2024)",
+  "errors": [
+    {
+      "replication": 13,
+      "error_type": "RateLimitError",
+      "error_message": "Error code: 429 - {'error': {'message': 'litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}]. Received Model Group=gemini-3-flash-preview\\nAvailable Model Group Fallbacks=None\\nError doing the fallback: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}] LiteLLM Retried: 1 times, LiteLLM Max Retries: 2', 'type': 'throttling_error', 'param': None, 'code': '429'}}",
+      "timestamp": "2026-01-23T19:21:45.143618"
+    },
+    {
+      "replication": 12,
+      "error_type": "RateLimitError",
+      "error_message": "Error code: 429 - {'error': {'message': 'litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}]. Received Model Group=gemini-3-flash-preview\\nAvailable Model Group Fallbacks=None\\nError doing the fallback: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}] LiteLLM Retried: 1 times, LiteLLM Max Retries: 2', 'type': 'throttling_error', 'param': None, 'code': '429'}}",
+      "timestamp": "2026-01-23T19:21:45.482092"
+    },
+    {
+      "replication": 14,
+      "error_type": "RateLimitError",
+      "error_message": "Error code: 429 - {'error': {'message': 'litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}]. Received Model Group=gemini-3-flash-preview\\nAvailable Model Group Fallbacks=None\\nError doing the fallback: litellm.RateLimitError: litellm.RateLimitError: geminiException - {\\n  \"error\": {\\n    \"code\": 429,\\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\\\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_requests_per_model_per_day, limit: 0\",\\n    \"status\": \"RESOURCE_EXHAUSTED\",\\n    \"details\": [\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.Help\",\\n        \"links\": [\\n          {\\n            \"description\": \"Learn more about Gemini API quotas\",\\n            \"url\": \"https://ai.google.dev/gemini-api/docs/rate-limits\"\\n          }\\n        ]\\n      },\\n      {\\n        \"@type\": \"type.googleapis.com/google.rpc.QuotaFailure\",\\n        \"violations\": [\\n          {\\n            \"quotaMetric\": \"generativelanguage.googleapis.com/generate_requests_per_model_per_day\",\\n            \"quotaId\": \"GenerateRequestsPerDayPerProjectPerModel\"\\n          }\\n        ]\\n      }\\n    ]\\n  }\\n}\\nNo fallback model group found for original model_group=gemini-3-flash-preview. Fallbacks=[{\\'o3-mini\\': [\\'DeepSeek-R1\\']}] LiteLLM Retried: 1 times, LiteLLM Max Retries: 2', 'type': 'throttling_error', 'param': None, 'code': '429'}}",
+      "timestamp": "2026-01-23T19:21:45.908370"
+    }
+  ]
+}

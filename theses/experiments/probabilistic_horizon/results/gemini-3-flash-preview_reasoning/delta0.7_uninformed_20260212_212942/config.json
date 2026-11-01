@@ -1,0 +1,48 @@
+{
+  "experiment": "Probabilistic Horizon Experiment",
+  "timestamp": "2026-02-12T21:29:42.843222",
+  "condition": "delta0.7_uninformed",
+  "network_type": "lattice",
+  "num_agents": 25,
+  "k": 2,
+  "bc_ratio": 4.0,
+  "continuation_delta": 0.7,
+  "horizon_info": "uninformed",
+  "min_rounds": 1,
+  "max_rounds": 100,
+  "expected_rounds": 4.333333333333333,
+  "actual_rounds_stats": {
+    "mean": 4.1,
+    "min": 1,
+    "max": 12,
+    "all": [
+      1,
+      2,
+      2,
+      3,
+      5,
+      2,
+      4,
+      6,
+      4,
+      12
+    ]
+  },
+  "replications": 10,
+  "completed_replications": 10,
+  "failed_replications": 0,
+  "failed_replication_indices": [],
+  "model": "gemini-3-flash-preview",
+  "model_provider": "gemini",
+  "temperature": 1.0,
+  "cache_disabled": true,
+  "with_reasoning": true,
+  "payoff_matrix": {
+    "T": 40,
+    "R": 30,
+    "P": 0,
+    "S": -10,
+    "b": 40,
+    "c": 10
+  }
+}
